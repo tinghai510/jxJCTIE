@@ -1,0 +1,557 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+/* 头部 */
+.toubu{
+    background-color: rgb(31, 100, 31);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    text-align: right;
+}
+.toubu p{
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+    font-size: 10px;
+}
+/* 头部 */
+/* 导航 */
+.navbar{
+    background-color: #ffffff;
+    color: #000000; /* 黑色字体 */
+   position: relative;
+   top: 30px;
+    padding: 10px 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ccc; /* 底部边框 */
+    z-index: 100;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 50px; /* 根据实际情况调整 */
+    margin-right: 10px;
+}
+.name {
+    font-size: 16.5px;
+    font-weight: bold;
+}
+.nav {
+    display: flex;
+    z-index: 1000;
+}
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.nav ul li {
+    margin-right: 20px;
+    position: relative;
+}
+.nav ul li:hover ul {
+    display: block;
+}
+.nav ul li a {
+    font-size: 17px;
+    color: #000000; /* 黑色字体 */
+    text-decoration: none;
+    padding: 13px;
+    transition: color 0.3s ease; /* 颜色过渡效果 */
+}
+.nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%; /* 子菜单相对于父菜单底部定位 */
+    left: -1px;
+    background-color: #ffffff; /* 白色背景 */
+    width: 100px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+.nav ul li:hover a {
+    color: #008000; /* 绿色字体 */
+}
+.nav ul li ul li {
+    margin: 0;
+}
+.nav ul li ul li a {
+    font-size: 14px;
+    color: #000000; /* 黑色字体 */
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease; /* 背景色和字体颜色过渡效果 */
+    display: block;
+    padding: 8px 20px;
+
+}
+.nav ul li ul li a:hover {
+    background-color: #008000; /* 绿色背景 */
+    color: #ffffff; /* 白色字体 */
+}
+.search-container {
+    display: flex;
+    align-items: center;
+}
+.search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+.search-button {
+    background-color: #008000;
+    color: #ffffff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.search-button:hover {
+    background-color: #005700;
+}
+/* 导航 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a.active {
+    font-weight: bold;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .showcase {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .showcase h2 {
+    font-size: 24px;
+  }
+  
+  .showcase p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .floor-plan img {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 30px;
+  }
+  
+  .booking-form {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .booking-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .booking-form input,
+  .booking-form select,
+  .booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .booking-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  /* footer */
+footer {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    border-top: #000000 1px solid;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+.footer-menu{
+    display: flex;
+    justify-content: start;
+    color: #333;
+}
+.footer-menu-item{
+    margin: 20px 110px;
+    padding: 0 3px;
+    font-size: 14px;
+     
+}
+footer ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #333;
+}
+footer ul li{
+    margin-bottom: 10px;
+}
+footer ul li a{
+    color: #333;
+    text-decoration: none;
+    font-size: 13px;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+    color: #008000;
+}
+.footer-contact h3{
+    color: #333;
+    padding: 20px 197px 5px;
+    clear: both;
+}
+.footer-contact-item{
+    padding: 0 120px;
+    position: relative;
+}
+.footer-contact img{
+    width: 35px;
+    margin-right: 10px;
+}
+.bottom-line {
+    border-bottom: 1px solid #000; /* 添加底部边框 */
+    padding: 20px 0; /* 设置上下内边距 */
+    text-align: center; /* 文字居中 */
+
+}
+.map-container{
+    margin: 0;
+    width: 100%;
+}
+iframe{
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-right: 50px;
+}
+.footer-2{
+    background-color: white;
+    color: #fff;
+    margin: 0 100px;
+    padding: 10px;
+    height: 90px;
+    border-top: #ccc 1px solid;
+    display: flex;
+    justify-content: start;
+}
+.footer-2 .footer-2-top img{
+    width: 80px;
+    margin-left: 22px 20px;
+}
+.footer-2 .company-name{
+    font-size: 14px;
+    color: #000;
+    padding: 10px 50px 0 45px;
+    width: 500px;
+}
+.footer-2 .company-name .company-desc{
+    padding-top: 5px;
+    font-size: 10px;
+    font-weight: 500;
+}
+.footer-2 .address{
+    color: #000;
+}
+
+.footer-2 .address{
+    padding: 20px 25px;
+    margin: 0 90px;
+}
+.footer-2 .address p{
+    font-size: 12px;
+    font-weight: 100;
+    margin: 0;
+}
+.download-app{
+    background-color: #000000;
+    width: 85px;
+    height: 0px;
+    position: absolute;
+    top: 38px;
+    right: 303px;
+    overflow: hidden;
+}
+.download-app img{
+    width: 85px;
+}
+.footer-contact .footer-contact-item:hover>.download-app{
+    height:85px ;
+}
+.footer-2 .button-connect{
+    margin: 30px 95px 0;
+}
+.footer-2 .button-connect .button-connect-btn{
+    font-size: 16px;
+    border-radius: 20px;
+    width: 145px;
+    height: 30px;
+    background-color: #008000;
+    color: #ffffff;
+    border: none;
+    text-decoration: none;
+}
+.footer-2 .button-connect .button-connect-btn a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer-2 .button-connect .button-connect-btn:hover {
+    background-color: #289600; /* 深绿色背景 */
+}
+.footer-bottom{
+    background-color: #005700;
+    color: #fff;
+    padding: 1px 0;
+    text-align: center;
+    font-size: 11px;
+    justify-content: center;
+}
+/* footer */
+.letter{
+    background-color: #485652;
+    color: white;
+   padding: 60px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.letter p{
+    margin-bottom: 20px;
+}
+.letter input,.letter button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid#949d9a;   
+    padding: 10px ;
+    border-radius:5px ;
+}
+.letter input{
+    width: 200px;
+      margin-right: 15px;   
+}
+.letter button{
+    width: 80px;
+    cursor: pointer;
+}
+input::placeholder{
+    color: #DDDDDD  ;
+}
+.menu{
+    display:none;
+}
+.top {
+    width: 100%;
+    height: 200px;
+    background-color: #005700;
+    overflow: hidden;
+    position: relative;
+    top: 30px;
+    display: flex;
+}
+.top img{
+    position: absolute;
+    top: -140%;
+    left: 0;
+}
+.gongsijianjie{
+    height: 1090px;
+    background-color: #ffffff;
+    margin: 0px 300px;
+
+}
+.gongsijianjie h1{
+    font-weight: normal;
+    font-size: 45px;
+    text-align: center;
+    color: #000;
+    padding-top: 50px;
+    margin-bottom: 0px;
+}
+.gongsijianjie h2{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: #989898;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.body2-box1 p{
+    font-family: 华文宋体;
+    font-variant: normal;
+    text-transform: none;
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+    font-style: normal;
+    letter-spacing: 0pt;
+    text-indent:2em;
+    padding-bottom: 5px;
+}
+.gongsijianjie img{
+    width: 150px;
+    padding: 0 467px;
+}
+
+.group-top {
+    width: 100%;
+    height: 200px;
+    background-color: #005700;
+    overflow: hidden;
+    position: relative;
+    top: 30px;
+    display: flex;
+}
+.group-top  .group-top-img{
+    position: absolute;
+    top: -140%;
+    left: 0;
+}
+.tuanduichengyuan{
+    height: 190px;
+    text-align: center;
+    margin: 0px 300px;
+}
+.tuanduichengyuan h1{
+    font-weight: normal;
+    font-size: 45px;
+    text-align: center;
+    color: #000;
+    padding-top: 50px;
+    margin-bottom: 0px;
+}
+.tuanduichengyuan h2{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: #989898;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+
+.zongjli{
+    height: 485px;
+    display: flex;
+    margin: 0px 200px;
+    overflow: hidden;
+}
+
+.zongjli .mingpian img{
+    width: 700px;
+    padding: 50px;
+}
+.zhuyaobufen-ditu{
+    height: 600px;
+    overflow: hidden;
+    margin: 50px 0;
+    position: relative;
+    display: flex;
+}
+.zhuyaobufen-ditu .zhuyaobufen-ditu-text{
+    background-color: rgb(0, 0, 0);
+    width: 40%;
+    height: 600px;
+    position: absolute;
+    left: 60%;
+    opacity: 0.7; 
+}
+.zhuyaobufen-ditu .zhuyaobufen-ditu-text .zhuyaobufen-ditu-text1{
+    margin: 170px 0 0 170px;
+
+}
+.zhuyaobufen-ditu .zhuyaobufen-ditu-text p{
+    color: #fff;
+    line-height: 35px;
+    text-align: left;
+}
+
+
+.ad{
+    margin: 0 280px;
+    display: flex;
+}
+.ad img{
+    width: 400px;
+    height: 700px;
+    box-shadow: #989898 1px 1px 10px;
+}
+
+ .ad .ad-text{
+      width: 65%;
+      padding: 50px;
+      font-size: larger;
+ }
+ .ad .ad-text .ad-text1{
+    font-size: larger;
+    text-align: center;
+    font-weight: 800;
+    margin: 100px 0;
+ }
+ 
+ .ad .ad-text .ad-text2{
+    text-align: center;
+    margin: 200px 0 0;
+ }
